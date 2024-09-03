@@ -1,0 +1,159 @@
+$directions: (
+  left: translateX(-100%),
+  right: translateX(100%),
+  top: translateY(-100%),
+  bottom: translateY(100%),
+);
+
+@keyframes glide-out-top {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: map-get($directions, top);
+  }
+}
+
+@keyframes glide-out-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: map-get($directions, right);
+  }
+}
+
+@keyframes glide-out-bottom {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: map-get($directions, bottom);
+  }
+}
+
+@keyframes glide-out-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: map-get($directions, left);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounceInUp {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@mixin animation-move-out-top($duration, $easing) {
+  animation-name: glide-out-top;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-move-out-right($duration, $easing) {
+  animation-name: glide-out-right;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-move-out-bottom($duration, $easing) {
+  animation-name: glide-out-bottom;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-move-out-left($duration, $easing) {
+  animation-name: glide-out-left;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-scale-in($duration, $easing) {
+  animation-name: scale-in;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-fade-in($duration, $easing) {
+  animation-name: fade-in;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-fade-out($duration, $easing) {
+  animation-name: fade-out;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}
+
+@mixin animation-move-in-bottom($duration, $easing) {
+  animation-name: bounceInUp;
+  animation-duration: $duration;
+  animation-timing-function: $easing;
+  animation-fill-mode: forwards;
+}

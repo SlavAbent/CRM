@@ -1,0 +1,324 @@
+@use "./primitives-styles.scss";
+
+// colors/text
+$text-primary: primitives-style.$gray-950;
+$text-primary-on-color-light: primitives-style.$white;
+$text-primary-on-color-dark: primitives-style.$alpha-dark-opacity-900;
+$text-primary-inverse: primitives-style.$white;
+$text-secondary: primitives-style.$gray-600;
+$text-secondary-on-color-light: primitives-style.$alpha-light-opacity-600;
+$text-secondary-on-color-dark: primitives-style.$gray-600;
+$text-secondary-inverse: primitives-style.$alpha-light-opacity-600;
+$text-tertiary: primitives-style.$gray-500;
+$text-tertiary-on-color-light: primitives-style.$alpha-light-opacity-500;
+$text-tertiary-on-color-dark: primitives-style.$gray-500;
+$text-tertiary-inverse: primitives-style.$alpha-light-opacity-500;
+$text-helper: primitives-style.$gray-500;
+$text-disabled: primitives-style.$gray-400;
+$text-primary-brand: primitives-style.$brand-600;
+$text-secondary-brand: primitives-style.$brand-400;
+$text-tertiary-brand: primitives-style.$brand-200;
+$text-primary-error: primitives-style.$error-700;
+$text-secondary-error: primitives-style.$error-500;
+$text-primary-warning: primitives-style.$warning-600;
+$text-secondary-warning: primitives-style.$warning-500;
+$text-primary-success: primitives-style.$success-600;
+$text-secondary-success: primitives-style.$success-500;
+$text-link: primitives-style.$brand-500;
+
+// colors/border
+$border-brand: primitives-style.$brand-500;
+$border-primary: primitives-style.$gray-300;
+$border-primary-on-color-light: primitives-style.$gray-25;
+$border-secondary: primitives-style.$gray-200;
+$border-alpha-light: primitives-style.$alpha-light-opacity-300;
+$border-alpha-dark: primitives-style.$alpha-dark-opacity-300;
+$border-disabled: primitives-style.$gray-400;
+$border-error: primitives-style.$error-500;
+$border-warning: primitives-style.$warning-500;
+$border-size: 1px;
+$border-fix: -1px;
+
+// colors/foreground
+$fg-primary: primitives-style.$gray-950;
+$fg-secondary: primitives-style.$gray-600;
+$fg-tertiary: primitives-style.$gray-500;
+$fg-quarterary: primitives-style.$gray-400;
+$fg-fivefold: primitives-style.$gray-300;
+$fg-primary-inverse: primitives-style.$white;
+$fg-primary-on-color-light: primitives-style.$white;
+$fg-on-color-dark: primitives-style.$gray-950;
+$fg-brand-primary: primitives-style.$brand-500;
+$fg-brand-secondary: primitives-style.$brand-400;
+$fg-brand-tertiary: primitives-style.$brand-300;
+$fg-error-primary: primitives-style.$error-600;
+$fg-error-secondary: primitives-style.$error-500;
+$fg-warning-primary: primitives-style.$warning-600;
+$fg-warning-secondary: primitives-style.$warning-500;
+$fg-success-primary: primitives-style.$success-600;
+$fg-success-secondary: primitives-style.$success-500;
+$fg-info-primary: primitives-style.$info-600;
+$fg-info-secondary: primitives-style.$info-500;
+$fg-disabled: primitives-style.$gray-400;
+$fg-brand-disabled: primitives-style.$brand-200;
+
+// colors/background
+$bg-surface: primitives-style.$gray-100;
+$bg-surface-inverse: primitives-style.$gray-950;
+$bg-surface-brand: primitives-style.$brand-500;
+$bg-layer-01: primitives-style.$white;
+$bg-layer-02: primitives-style.$gray-100;
+$bg-layer-03: primitives-style.$gray-200;
+$bg-layer-inverse-01: primitives-style.$gray-950;
+$bg-layer-inverse-02: primitives-style.$gray-900;
+$bg-layer-inverse-03: primitives-style.$gray-800;
+$bg-layer-brand: primitives-style.$brand-500;
+$bg-layer-disabled-01: primitives-style.$white;
+$bg-layer-disabled-02: primitives-style.$gray-100;
+$bg-layer-disabled-03: primitives-style.$gray-200;
+$bg-layer-on-color-light: primitives-style.$white;
+$bg-layer-on-color-dark: primitives-style.$gray-950;
+$bg-layer-highlight: primitives-style.$brand-100;
+$bg-error-primary: primitives-style.$error-600;
+$bg-warning-primary: primitives-style.$warning-600;
+$bg-success-primary: primitives-style.$success-600;
+$bg-info-primary: primitives-style.$info-600;
+
+// state-layer-colors/hover
+$hover-bg-dark: primitives-style.$alpha-dark-opacity-100;
+$hover-bg-light: primitives-style.$alpha-light-opacity-100;
+
+// state-layer-colors/focus
+$focus-bg: primitives-style.$alpha-dark-opacity-100;
+$focus-border-dark: primitives-style.$gray-900;
+$focus-border-brand: primitives-style.$brand-500;
+$focus-bg-light: primitives-style.$alpha-light-opacity-100;
+$focus-border-light: primitives-style.$white;
+$focus-border-size: 1px;
+
+// state-layer-colors/press
+$press-bg-dark: primitives-style.$alpha-dark-opacity-200;
+$press-bg-light: primitives-style.$alpha-light-opacity-200;
+
+// componets/components-color/link
+$text-link: $text-link;
+$text-link-visited: #6e4dc4;
+
+// state-layer-colors/select
+$select-bg: primitives-style.$gray-900;
+$select-bg-on-color-light: primitives-style.$white;
+$select-bg-brand: primitives-style.$brand-500;
+$select-border: primitives-style.$gray-900;
+$select-border-on-color-light: primitives-style.$white;
+$select-border-brand: primitives-style.$brand-500;
+$select-border-size: 1px;
+
+// state-layer-colors/dev
+$state-dark: #000000;
+$state-light: #ffffff;
+$value-hover: 8%;
+$value-pressed: 16%;
+
+// components/components-color/text-line
+$border-text-line-divider-alpha-light: $border-alpha-light;
+
+// components/components-color/carousel
+$bg-carousel: primitives-style.$alpha-dark-40;
+
+// components/components-color/stories
+$bg-stories-progress-bars: $fg-primary-on-color-light;
+
+// components/components-color/progress-indicator
+$bg-loading: $bg-layer-03;
+$bg-loading-active: $fg-brand-primary;
+
+// components/components-color/notification
+$fg-notification-icon: primitives-style.$white;
+$fg-notification-icon-default: $fg-primary-inverse;
+$bg-notification-default: $bg-layer-03;
+$fg-notification-default: $fg-brand-primary;
+$bg-notification-error: primitives-style.$error-50;
+$fg-notification-error: primitives-style.$error-700;
+$bg-notification-success: primitives-style.$success-50;
+$fg-notification-success: primitives-style.$success-700;
+$bg-notification-warning: primitives-style.$warning-50;
+$fg-notification-warning: primitives-style.$warning-700;
+$bg-notification-info: primitives-style.$info-50;
+$fg-notification-info: primitives-style.$info-700;
+
+// components/components-color/control
+$bg-control: $fg-secondary;
+$bg-control-disable: $bg-layer-disabled-03;
+$fg-control: $fg-primary-on-color-light;
+$fg-control-disable: $fg-disabled;
+$fg-control-select: $fg-brand-primary;
+$fg-switch-disable: primitives-style.$brand-300;
+$fg-switch-enable-disable: primitives-style.$brand-100;
+
+// components/components-color/bottom-navigation
+$bg-bottom-navigation: $bg-layer-01;
+
+// components/components-color/calendar
+$bg-calendar-highlight: primitives-style.$brand-200;
+$bg-calendar-select: $fg-brand-primary;
+
+// components/components-color/basic-action
+$bg-basic-action: $bg-layer-01;
+$bg-blur-basic-action: primitives-style.$alpha-light-20;
+
+// components/components-color/bottom-sheets
+$bg-bottom-sheets: $bg-layer-01;
+
+// components/components-color/basic-dialog
+$bg-basic-dialog: $bg-layer-01;
+
+// components/components-color/selection-fields
+$bg-selection-fields: $bg-layer-02;
+
+// components/components-color/avatar
+$bg-avatar: $bg-layer-01;
+$text-user-name: $text-primary;
+
+// components/components-color/chips
+$bg-chips: $bg-layer-02;
+$gap-chips: -8px;
+
+// components/components-color/tag/tag
+$bg-tag-basic: $bg-layer-02;
+$bg-tag-light: $bg-layer-01;
+$bg-tag-dark: $bg-layer-inverse-02;
+$bg-tag-warning: primitives-style.$warning-600;
+$bg-tag-success: primitives-style.$success-600;
+$bg-tag-brand: primitives-style.$brand-500;
+$bg-tag-error: primitives-style.$error-600;
+$bg-tag-info: primitives-style.$info-600;
+$gap-tag-small: -2px;
+$gap-tag-medium: -8px;
+$gap-tag-large: -10px;
+
+// components/components-color/tag/status-tag
+$bg-status-tag-warning: primitives-style.$warning-50;
+$fg-status-tag-warning: primitives-style.$warning-950;
+$bg-status-tag-success: primitives-style.$success-100;
+$fg-status-tag-success: primitives-style.$success-950;
+$bg-status-tag-error: primitives-style.$error-50;
+$fg-status-tag-error: primitives-style.$error-950;
+$bg-status-tag-info: primitives-style.$info-50;
+$fg-status-tag-info: primitives-style.$info-950;
+$gap-status-tag-small: -4px;
+$gap-status-tag-medium: -8px;
+$gap-status-tag-large: -12px;
+
+// components/components-color/icon-element
+$bg-icon-element: $fg-primary-on-color-light;
+
+// components/components-color/card-icon
+$bg-card-icon-default: primitives-style.$brand-600;
+
+// components/components-color/list
+$bg-list-primary: $bg-layer-01;
+$bg-list-secondary: $bg-layer-02;
+
+// components/components-color/forms
+$bg-form: $bg-layer-02;
+$bg-form-disabled: $bg-layer-disabled-02;
+
+// components/components-color/button-banner
+$bg-button-banner: $bg-layer-02;
+$bg-button-banner-brand: $bg-layer-brand;
+
+// components/components-color/button
+$button-disabled: $bg-layer-disabled-02;
+
+// components/components-color/toast-notification
+$bg-toast-notification: $bg-layer-inverse-02;
+$fg-toast-notification: $fg-primary-inverse;
+$text-toast-notification: $text-primary-inverse;
+
+// components/components-color/button/primary
+$button-primary-bg: $bg-layer-brand;
+$button-primary-hover: primitives-style.$alpha-dark-opacity-100;
+$button-primary-focus: primitives-style.$alpha-dark-opacity-200;
+$button-primary-press: primitives-style.$alpha-dark-opacity-200;
+$bg-button-primary-loading: primitives-style.$alpha-light-opacity-700;
+$button-primary-loading-bg-active: primitives-style.$alpha-light-opacity-950;
+
+// components/components-color/button/secondary
+$button-secondary-bg: $bg-layer-03;
+$button-secondary-hover: primitives-style.$alpha-dark-opacity-300;
+$button-secondary-focus: primitives-style.$alpha-dark-opacity-400;
+$button-secondary-press: primitives-style.$alpha-dark-opacity-500;
+
+// components/components-color/button/tertiary
+$button-tertiary-bg: $bg-layer-02;
+$button-tertiary-hover: primitives-style.$alpha-dark-opacity-200;
+$button-tertiary-focus: primitives-style.$alpha-dark-opacity-200;
+$button-tertiary-press: primitives-style.$alpha-dark-opacity-300;
+
+// components/alpha
+$alpha-white-10: primitives-style.$alpha-light-10;
+$alpha-white-20: primitives-style.$alpha-light-20;
+$alpha-white-30: primitives-style.$alpha-light-30;
+$alpha-white-40: primitives-style.$alpha-light-40;
+$alpha-white-50: primitives-style.$alpha-light-50;
+$alpha-white-60: primitives-style.$alpha-light-60;
+$alpha-white-70: primitives-style.$alpha-light-70;
+$alpha-white-80: primitives-style.$alpha-light-80;
+$alpha-white-90: primitives-style.$alpha-light-90;
+$alpha-dark-10: primitives-style.$alpha-dark-10;
+$alpha-dark-20: primitives-style.$alpha-dark-20;
+$alpha-dark-30: primitives-style.$alpha-dark-30;
+$alpha-dark-40: primitives-style.$alpha-dark-40;
+$alpha-dark-50: primitives-style.$alpha-dark-50;
+$alpha-dark-60: primitives-style.$alpha-dark-60;
+$alpha-dark-70: primitives-style.$alpha-dark-70;
+$alpha-dark-80: primitives-style.$alpha-dark-80;
+$alpha-dark-90: primitives-style.$alpha-dark-90;
+
+// components/basic
+$white: primitives-style.$white;
+$black: primitives-style.$black;
+$transparent: primitives-style.$transparent;
+
+// components/system-bar
+$system-bar: primitives-style.$white;
+$system-bar-inverse: primitives-style.$black;
+$system-bar-on-color-light: primitives-style.$white;
+$system-bar-on-color-dark: primitives-style.$black;
+
+// other/blur
+$blur-primary: primitives-style.$alpha-dark-20;
+$blur-primary-inverse: $alpha-white-20;
+$blur-menu: $alpha-white-20;
+$blur-border: primitives-style.$alpha-dark-10;
+$bg-blur-value: 8px;
+$blur-menu-value: 16px;
+
+// other/overlay
+$overlay-surface: primitives-style.$alpha-dark-50;
+
+// other/skeleton
+$skeleton-neutral-bg: primitives-style.$gray-300;
+$skeleton-neutral-active: primitives-style.$white;
+$skeleton-alpha-bg: $alpha-white-60;
+$skeleton-alpha-active: $alpha-white-90;
+
+// other/shadow
+$shadow-box-01: primitives-style.$alpha-dark-30;
+
+// components/components-color/snackbar-action
+$bg-snackbar-action-light: $alpha-white-10;
+$fg-snackbar-action-light: $fg-primary-inverse;
+$text-snackbar-action-light: $text-primary-inverse;
+$bg-snackbar-action-brand: $alpha-white-10;
+$fg-snackbar-action-brand: $fg-brand-primary;
+$text-snackbar-action-brand: $text-primary-brand;
+$bg-snackbar-action-secondary: $alpha-white-10;
+$fg-snackbar-action-secondary: $fg-secondary;
+$text-snackbar-action-secondary: $text-secondary;
+
+// components/components-color/button/link
+$button-link-fg: $text-primary-brand;
+$button-link-hover: primitives-style.$alpha-dark-opacity-200;
+$button-link-focus: primitives-style.$alpha-dark-opacity-200;
+$button-link-press: primitives-style.$alpha-dark-opacity-300;

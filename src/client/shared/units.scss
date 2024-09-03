@@ -1,0 +1,56 @@
+// Space tokens / Отступы
+$space-none: 0px;
+$space-3xs: 2px;
+$space-2xs: 4px;
+$space-xs: 8px;
+$space-s: 12px;
+$space-m: 16px;
+$space-ml: 20px;
+$space-xl: 24px;
+$space-2xl: 32px;
+$space-3xl: 40px;
+$space-4xl: 48px;
+$space-5xl: 56px;
+$space-6xl: 64px;
+$space-7xl: 80px;
+
+// Radius tokens / Скругления
+$radius-2xs: 4px;
+$radius-xs: 8px;
+$radius-x2s: 12px;
+$radius-s: 16px;
+$radius-m: 24px;
+$radius-l: 32px;
+$radius-xl: 40px;
+$radius-ar: 69px;
+$stories-viewed-radius: 69px;
+
+// Размеры иконок
+$icon-size-small: 16px;
+$icon-size-medium: 24px;
+$icon-size-large: 32px;
+$icon-size-max: 40px;
+
+// Размеры 3D-элементов
+$element-size-small: 32px;
+$element-size-medium: 48px;
+$element-size-large: 80px;
+$element-size-max: 160px;
+
+// Размеры 3D-элементов
+$avatar-size-small: 32px;
+$avatar-size-medium: 40px;
+$avatar-size-large: 48px;
+$avatar-size-max: 64px;
+
+// TODO: Удалить после миграции проектов на новую версию палитры (http://sdlc.go.rshbank.ru/jira/browse/OB_COREUI-465)
+$border-radius-s: 4px;
+$border-radius-m: 6px;
+$border-radius-l: 8px;
+$border-radius-xl: 12px;
+$border-radius-2xl: 16px;
+
+// Обводка
+$border-width-s: 1px;
+$border-width-m: 2px;
+$border-width-l: 3px;

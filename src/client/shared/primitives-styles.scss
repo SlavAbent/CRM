@@ -1,0 +1,152 @@
+// colors/base
+$white: #ffffff;
+$black: #000000;
+$transparent: rgba(255, 255, 255, 0);
+
+// colors/gray
+$gray-25: #ffffff;
+$gray-50: #fcfcfd;
+$gray-100: #f6f7f8;
+$gray-200: #ecedef;
+$gray-300: #e3e5e8;
+$gray-400: #c8ccd0;
+$gray-500: #acb3b9;
+$gray-600: #95a0a9;
+$gray-700: #75808a;
+$gray-800: #464d53;
+$gray-900: #2f3337;
+$gray-950: #171a1c;
+$gray-1000: #000000;
+
+// colors/dark-gray
+$dark-gray-25: #151515;
+$dark-gray-50: #232323;
+$dark-gray-100: #2e2e2e;
+$dark-gray-200: #404040;
+$dark-gray-300: #22252a;
+$dark-gray-400: #3b4045;
+$dark-gray-500: #acb3b9;
+$dark-gray-600: #95a0a9;
+$dark-gray-700: #75808a;
+$dark-gray-800: #464d53;
+$dark-gray-900: #2f3337;
+$dark-gray-950: #e3e6e8;
+$dark-gray-1000: #ffffff;
+
+// colors/brand
+$brand-25: #f1f9ef;
+$brand-50: #eafae5;
+$brand-100: #caf0bf;
+$brand-200: #a5e695;
+$brand-300: #7cdc67;
+$brand-400: #55d440;
+$brand-500: #1ccb01;
+$brand-600: #00bb00;
+$brand-700: #00a600;
+$brand-800: #009200;
+$brand-900: #006f00;
+$brand-950: #023e02;
+
+// colors/alpha/light
+$alpha-light-opacity-25: rgba(255, 255, 255, 0.02);
+$alpha-light-opacity-50: rgba(255, 255, 255, 0.04);
+$alpha-light-opacity-100: rgba(255, 255, 255, 0.08);
+$alpha-light-opacity-200: rgba(255, 255, 255, 0.16);
+$alpha-light-opacity-300: rgba(255, 255, 255, 0.32);
+$alpha-light-opacity-400: rgba(255, 255, 255, 0.5);
+$alpha-light-opacity-500: rgba(255, 255, 255, 0.56);
+$alpha-light-opacity-600: rgba(255, 255, 255, 0.8);
+$alpha-light-opacity-700: rgba(255, 255, 255, 0.92);
+$alpha-light-opacity-800: rgba(255, 255, 255, 0.94);
+$alpha-light-opacity-900: rgba(255, 255, 255, 0.96);
+$alpha-light-opacity-950: rgba(255, 255, 255, 0.98);
+
+// colors/alpha/dark
+$alpha-dark-opacity-25: rgba(0, 0, 0, 0.02);
+$alpha-dark-opacity-50: rgba(0, 0, 0, 0.04);
+$alpha-dark-opacity-100: rgba(0, 0, 0, 0.08);
+$alpha-dark-opacity-200: rgba(0, 0, 0, 0.16);
+$alpha-dark-opacity-300: rgba(0, 0, 0, 0.32);
+$alpha-dark-opacity-400: rgba(0, 0, 0, 0.5);
+$alpha-dark-opacity-500: rgba(0, 0, 0, 0.56);
+$alpha-dark-opacity-600: rgba(0, 0, 0, 0.8);
+$alpha-dark-opacity-700: rgba(0, 0, 0, 0.92);
+$alpha-dark-opacity-800: rgba(0, 0, 0, 0.94);
+$alpha-dark-opacity-900: rgba(0, 0, 0, 0.96);
+$alpha-dark-opacity-950: rgba(0, 0, 0, 0.98);
+
+// colors/alert/error
+$error-25: #fffafa;
+$error-50: #ffebed;
+$error-100: #ffcccf;
+$error-200: #fc9893;
+$error-300: #f66f68;
+$error-400: #ff4b3f;
+$error-500: #ff371a;
+$error-600: #f72b1d;
+$error-700: #e51c17;
+$error-800: #d80e0e;
+$error-900: #ca0000;
+$error-950: #ae0202;
+
+// colors/alert/success
+$success-25: #eff6ef;
+$success-50: #e7f6e7;
+$success-100: #c6e8c5;
+$success-200: #a1d9a0;
+$success-300: #79cb79;
+$success-400: #5abf5c;
+$success-500: #39b33d;
+$success-600: #2fa434;
+$success-700: #219229;
+$success-800: #11811d;
+$success-900: #006209;
+$success-950: #002e04;
+
+// colors/alpha
+$alpha-light-10: rgba(255, 255, 255, 0.1);
+$alpha-light-20: rgba(255, 255, 255, 0.2);
+$alpha-light-30: rgba(255, 255, 255, 0.3);
+$alpha-light-40: rgba(255, 255, 255, 0.4);
+$alpha-light-50: rgba(255, 255, 255, 0.5);
+$alpha-light-60: rgba(255, 255, 255, 0.6);
+$alpha-light-70: rgba(255, 255, 255, 0.7);
+$alpha-light-80: rgba(255, 255, 255, 0.8);
+$alpha-light-90: rgba(255, 255, 255, 0.9);
+$alpha-dark-10: rgba(23, 26, 28, 0.1);
+$alpha-dark-20: rgba(23, 26, 28, 0.2);
+$alpha-dark-30: rgba(23, 26, 28, 0.3);
+$alpha-dark-40: rgba(23, 26, 28, 0.4);
+$alpha-dark-50: rgba(23, 26, 28, 0.5);
+$alpha-dark-60: rgba(23, 26, 28, 0.6);
+$alpha-dark-70: rgba(23, 26, 28, 0.7);
+$alpha-dark-80: rgba(23, 26, 28, 0.8);
+$alpha-dark-90: rgba(23, 26, 28, 0.9);
+
+// colors/alert/warning
+$warning-25: #fffdf7;
+$warning-50: #fcf6df;
+$warning-100: #f7e7af;
+$warning-200: #f1d77c;
+$warning-300: #ecc947;
+$warning-400: #e9bd1c;
+$warning-500: #e6b200;
+$warning-600: #e6a500;
+$warning-700: #e79300;
+$warning-800: #e68300;
+$warning-900: #e66400;
+$warning-950: #994300;
+
+// colors/alert/info
+$info-25: #f7fbff;
+$info-50: #e3f2ff;
+$info-100: #bbdeff;
+$info-200: #8ecaff;
+$info-300: #5cb4ff;
+$info-400: #35a4ff;
+$info-500: #0894ff;
+$info-600: #1a85ff;
+$info-700: #2072eb;
+$info-800: #2360d8;
+$info-900: #253fb9;
+$info-950: #16256e;
